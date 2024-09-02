@@ -1,0 +1,42 @@
+@font-face {
+    font-family: National-Condensed;
+    src: url('../assets/fonts/National-2-Condensed-Bold.woff2');
+}
+
+@font-face {
+    font-family: National-Regular;
+    src: url('../assets/fonts/national-regular.otf');
+}
+
+section{
+    width: 100%;
+    /* height: fit-content; */
+    /* height: max-content; */
+    background-color: #F8F7F5;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+
+#categorySectionHeading{
+    color: rgb(33, 37, 41);
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    background: transparent;
+    font-size: 32px;
+    font-family: National-Condensed;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    gap: 2vw;
+    margin-bottom: 5vh;
+}
+

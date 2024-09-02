@@ -1,0 +1,155 @@
+@font-face {
+    font-family: National;
+    src: url(../assets//fonts//National2-Medium.otf);
+}
+
+@font-face {
+    font-family: National-Regular;
+    src: url(../assets//fonts//national-regular.otf);
+}
+
+.mainHeader{
+    position: fixed;
+}
+
+.location{
+    text-align: center;
+    line-height: 6vh;
+    height: 6vh;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: National-Regular;
+    background: #ffff;
+    color: black;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location span{
+    text-decoration: none solid rgb(32, 33, 36);
+    line-height: 24px;
+    letter-spacing: .1px;
+}
+
+.location img{
+    line-height: 6vh;
+    width: 2vw;
+    height: 2vh;
+}
+
+.location button{
+    width: 6.5vw;
+    height: 4.2vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    margin-left: 2vw;
+    line-height: 4.2vh;
+    background-color: rgb(32, 33, 36);
+    border: none;
+    /* text-align: center; */
+    border-radius: 40px;
+    font-size: 12px;
+    font-family: National;
+    font-weight: 400;
+    color: rgb(255, 255, 255)
+}
+
+.header{
+    font-family: National;
+    width: 100vw;
+    height: 12.5vh;
+    line-height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #EDEDED;
+    border-bottom: 2px solid #EDEDED;
+    background: #fff;
+}
+
+
+/* leftDiv */
+.leftDiv{
+    margin-left: 7.5vw;
+    width: 50%;
+    height: 12.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    /* background: yellow; */
+}
+
+.leftDiv .logo .inner-div{
+    width: 7.5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    /* background: lightblue; */
+}
+
+.leftDiv .logo img{
+    width: 80px;
+    height: 40px;
+    /* background: cyan; */
+}
+
+.button{
+    height: 15vh;
+    display: flex;
+    gap: 2.5vw;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* rightDiv */
+.rightDiv{
+    width: 12.5%;
+    margin-right: 10vw;
+    height: 12.5vh;
+    color: #202124;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userAccountIcon{
+    height: 3vh;
+    width: 50%;
+    display: flex;
+    border-right: 1px solid #202124;
+}
+
+.rightDiv .userAccountIcon img{
+    width: 3vh;
+    height: 3vh;
+}
+
+.rightDiv .userAccountIcon .signIn{
+    margin-top: .5vh;
+}
+
+.rightDiv .cart{
+    height: 3vh;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rightDiv .cart span{
+    line-height: 20vh;
+
+}
+
+.rightDiv .cart img{
+    width: 7.5vw;
+    height: 7.5vh;
+}

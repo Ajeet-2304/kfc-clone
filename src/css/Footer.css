@@ -1,0 +1,151 @@
+@font-face {
+    font-family: National-Condensed;
+    src: url('../assets/fonts/TestNational2Condensed-Regular-BF663c3f47e933a.otf');
+}
+
+@font-face {
+    font-family: National-Condensed-Light;
+    src: url('../assets/fonts/TestNational2Condensed-Light-BF663c3f47e92b7.otf');
+}
+
+@font-face {
+    font-family: National-Light;
+    src: url('../assets/fonts/TestNational-Light-BF663c3f4ab46de.otf');
+}
+
+@font-face {
+    font-family: National-Regular;
+    src: url('../assets/fonts/national-regular.otf');
+}
+
+@font-face {
+    font-family: National2-Regular;
+    src: url('../assets/fonts/TestNational2-Regular-BF663c3f4a23d54.otf');
+}
+
+.footer{
+    width: 100vw;
+    height: 50vh;
+    padding-top: 3.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #202124;
+    /* background: crimson; */
+}
+.footer-body{
+    margin:  0vh 5vw;
+    width: 90vw;
+    height: 25vh;
+    /* background: yellow; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #000;
+    
+}
+
+.footer-body  .logo{
+    height: 20vh;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: left;
+    /* background: crimson; */
+}
+
+.footer-body .links{
+    font-family: National2-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+    /* background: green; */
+}
+
+.footer-body .links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vh;
+    /* font-size: small; */
+    color: #fff;
+}
+
+.footer-body .links ul  span{
+    font-weight: 500;
+    font-family: National2-Regular;
+    font-size: 14px;
+}
+
+.footer-body .links ul li{
+    cursor: pointer;
+}
+
+.footer-body .findKfc{
+    width: 6vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: left;
+    gap: .5vw;
+    line-height: 2vh;
+    font-size: small;
+    color: #fff;
+    /* cursor: pointer; */
+    /* background: orange; */
+}
+
+.footer-body .findKfc img,span{
+    cursor: pointer;
+}
+
+.footer-body .appLinks{
+    width: 19vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: left;
+    gap: 1.5vw;
+    /* background: blue; */
+}
+
+.footer .copyright {
+    width: 100%;
+    /* height: 5vh; */
+    /* background: firebrick; */
+    margin-bottom: -3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.footer .copyright span{
+    width: 45vw;
+    /* background: crimson; */
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 5vh;
+    /* background: #000; */
+    font-family: National2-Regular;
+}
+
+.footer .copyright .socialIcons{
+    width: 9vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background: crimson; */
+}
