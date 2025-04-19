@@ -9,7 +9,7 @@ import StartOrderPopUp from "./StartOrderPopUp";
 const Header = () => {
     return (
         <>
-            <header className="mainHeader">
+            <header className="mainHeader" >
                 <div className="location">
                     <img src={location} alt="search-pin" />
                     <span>Allow location access for local store menu and promos</span>

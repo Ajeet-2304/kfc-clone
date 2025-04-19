@@ -13,10 +13,13 @@ const App = () => {
   // const [, setStartOrder] = useState(false);
   const handleModal = () => setStartOrder(startOrder ? false : true);
 
+  
+
   const router = createBrowserRouter(
     createRoutesFromElements(
-    <>
       
+    <>
+
       <Route path='/' element={<Layout startOrder={startOrder} handleModal={handleModal} modalWrapper={"modal-wrapper"} modalContainer={"modal-container"}/>}>
         
         <Route path='/' element={<Home startOrder={startOrder} handleModal={handleModal}/>}/>
@@ -30,10 +33,7 @@ const App = () => {
 
   return (
     <>
-      
-      <RouterProvider router={router} >
-      </RouterProvider>
-      
+        <RouterProvider router={router} />
     </>
   )
 }
