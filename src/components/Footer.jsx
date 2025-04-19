@@ -18,8 +18,6 @@ const Footer = () => {
     }
   }
   const showPosition = (position) => {
-    // "Latitude: " + position.coords.latitude + 
-    // "<br>Longitude: " + position.coords.longitude;
     console.log(position.coords.latitude, position.coords.longitude);
   }
   return (

@@ -67,6 +67,7 @@
     flex-direction: row;
     align-items: start;
     justify-content: space-evenly;
+    gap: 2.5vw;
     /* background: green; */
 }
 
