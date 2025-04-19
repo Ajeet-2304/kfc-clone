@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../css/MenuList.css';  
 
 // eslint-disable-next-line react/prop-types
 const MenuLists = ({list,id,section}) => {
@@ -13,15 +14,18 @@ const MenuLists = ({list,id,section}) => {
     // };
     return (
         <>
-            <Link id={id} to={`/menu/${url}`} className="list" key={url} onClick={()=>{
-                // eslint-disable-next-line react/prop-types
-                section.current.scrollIntoView({
-                    behavior: 'smooth',
-                    top: '0vh', 
-                    });
-            }}>
-                {list}
-            </Link>
+            <div className="menuList">
+                <Link   id={id} to={`/menu/${url}`} className="list" key={url} onClick={()=>{
+                    // eslint-disable-next-line react/prop-types
+                    section.current.scrollIntoView({
+                        behavior: 'smooth',
+                        top: '0vh', 
+                        });
+                }}>
+                    {list}
+                </Link>
+            </div>
+            
         </>
     );
 };

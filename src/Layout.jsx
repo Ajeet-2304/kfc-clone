@@ -30,7 +30,7 @@ const Layout = ({startOrder,handleModal}) => {
                 <Header/>
             </div>
             <div className="startOrder">
-            <StartOrder handleModal={handleModal}/>
+            <StartOrder id='startOrder' handleModal={handleModal}/>
             </div>
             <div className="outlet">
                 <Outlet/>

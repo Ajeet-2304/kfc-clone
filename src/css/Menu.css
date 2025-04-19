@@ -12,30 +12,22 @@
     width: 100vw;
     height: 100%;
     color: #000;
-    /* margin-top: 2vh; */
-    /* background-color: #fff; */
-    /* z-index: 0000; */
+    display: flex;
+    gap: 2vw;
 }
 
-
-
-
-
 .leftSide{
+    height: 100%;
     width: 20vw;
-    max-height: 100vh;
-    margin-left: 12vw;
-    float: left;
-    overflow: hidden;
-    top: 18.4vh;
+    left: 12vw;
     position: sticky;
+    top: 14vh;
 }
 
 .leftSide .verticalLines{
     width: 3vw;
     height: 4vh;
     margin-bottom: 2vh;
-    /* margin-left: 12vw; */
 }
 
 .leftSide .verticalLines img{
@@ -61,6 +53,10 @@
     text-transform: uppercase;
 }
 
+.lists{
+    position: sticky;
+}
+
 .leftSide .lists .list{
     width: 100%;
     height: 6vh;
@@ -74,6 +70,7 @@
     align-items: center;
     justify-content: left;
     text-transform: uppercase;
+    
 }
 
 .leftSide .lists .list:focus{
@@ -81,22 +78,13 @@
 }
 
 .rightSide{
-    /* z-index: 10000; */
-    /* position: sticky; */
     margin-top: 10vh;
-
     width: 55vw;
     height: 100%;
-    margin-right: 10vw;
-    /* background: #000; */
+    margin-left: 12vw;
     z-index: 1111111;
-    float: right;
-    /* top: 40vh; */
 }
 
-/* .rightSide::-webkit-scrollbar{
-    top: 50vh;
-} */
 
 .rightSide .searchBar{
     width: 15vw;
@@ -135,26 +123,14 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 3vh;
-    /* font-family: National-Condensed; */
 }
 
 .sections{
-    /* background: cyan; */
-    /* margin-top: 30vh; */
+    margin-top: -20vh;
     height: 100%;
-
-    /* position: fixed; */
-    /* top: 20vh; */
-    /* width: 100%; */
-    
-
 
 }
 
 .section{
     height: 100%;
-    /* width: 100%; */
-    /* position: absolute; */
-    /* margin-top: 20vh; */
-    /* overflow-y: scroll; */
 }

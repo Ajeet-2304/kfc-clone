@@ -2,15 +2,13 @@ import {Route, createBrowserRouter, createRoutesFromElements,RouterProvider} fro
 import './App.css'
 import Layout from './Layout';
 import Home from './pages/Home';
-// import CategoryDesc from './pages/Menu';
 import Menu from './pages/Menu';
 import { useState } from 'react';
 import SignIn from './components/SignIn';
-// import StartOrderPopUp from './components/StartOrderPopUp';
+import Deals from './pages/Deals';
 
 const App = () => {
   const [startOrder, setStartOrder] = useState(false);
-  // const [, setStartOrder] = useState(false);
   const handleModal = () => setStartOrder(startOrder ? false : true);
 
   
@@ -25,6 +23,8 @@ const App = () => {
         <Route path='/' element={<Home startOrder={startOrder} handleModal={handleModal}/>}/>
         <Route path='/menu' element={<Menu startOrder={startOrder} handleModal={handleModal}/>}/>
         <Route path='/menu/:url' element={<Menu startOrder={startOrder} handleModal={handleModal}/>}/>
+        <Route path='/deals' element={<Deals />}/>
+
       </Route>
       <Route path='/signIn' element={<SignIn/>}/>
       </>
