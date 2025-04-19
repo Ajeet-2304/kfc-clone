@@ -5,15 +5,26 @@ import AccountIcon from "../assets/Account_Icon.svg";
 import Cart from "../assets/bucket_cart_icon.svg";
 import "../css/Header.css";
 import location from '../assets/search-pin.svg';
-import StartOrderPopUp from "./StartOrderPopUp";
 const Header = () => {
+
+    const getLocation = () =>{
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }else { 
+            return "Geolocation is not supported by this browser.";
+        }
+    } 
+    const showPosition = (position) => {
+        console.log(position.coords.latitude, position.coords.longitude);
+    }
+
     return (
         <>
             <header className="mainHeader" >
                 <div className="location">
                     <img src={location} alt="search-pin" />
                     <span>Allow location access for local store menu and promos</span>
-                    <button>Set Location</button>
+                    <button onClick={()=>{getLocation()}}>Set Location</button>
                 </div>
                 <div className="header">
                     <div className="leftDiv">
@@ -50,9 +61,9 @@ const Header = () => {
                         </div>
                         <div className="cart">
                             <span className="cartValue">₹0</span>
-                            <img src={Cart} alt="cart" onClick={()=>{
-                                <StartOrderPopUp/>
-                            }} />
+                            <Link to="/cart" className="cartIcon">
+                                <img src={Cart} alt="cart"/>
+                            </Link>
                         </div>
                     </div>
                 </div>

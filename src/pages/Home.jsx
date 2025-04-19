@@ -131,7 +131,7 @@ const Home = () => {
                     </div>
                     <div className="offerHeading">
                         <span>Exclusive Offers for you</span>
-                        <Link to={'/'} style={{ color: '#fff' }}>View All Deals <span>→</span></Link>
+                        <Link to={'/deals'} style={{ color: '#fff' }}>View All Deals <span>→</span></Link>
                     </div>
                     <div className="offerCards">
                         {/* <div className="leftButton">

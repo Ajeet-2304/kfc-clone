@@ -10,11 +10,13 @@
 
 .offerCard{
     margin-left: 2.5vw;
-    width: 20vw;
-    height: 52vh;
-    background: #fff;
+    width: 55vw;
+    height: 60vh;
+    background: #202124;
     border-radius: 10px;
 }
+
+
 
 .offerCard-img{
     width: 20vw;
@@ -37,21 +39,23 @@
 
 .offerCard-desc > .title{
     background-color: #fff;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     min-height: 6vh;
     font-size: 38px;
     font-family: National-Condensed;
     font-weight: 700;
+    list-style: none;
+    text-decoration: none;
     color: rgb(228, 0, 43);
 }
 
 .offerCard-desc > .desc{
     background-color: #fff;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     min-height: 10vh;
     font-size: 14px;
     font-weight: 400;

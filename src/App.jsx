@@ -6,6 +6,7 @@ import Menu from './pages/Menu';
 import { useState } from 'react';
 import SignIn from './components/SignIn';
 import Deals from './pages/Deals';
+import Cart from './pages/Cart';
 
 const App = () => {
   const [startOrder, setStartOrder] = useState(false);
@@ -24,7 +25,7 @@ const App = () => {
         <Route path='/menu' element={<Menu startOrder={startOrder} handleModal={handleModal}/>}/>
         <Route path='/menu/:url' element={<Menu startOrder={startOrder} handleModal={handleModal}/>}/>
         <Route path='/deals' element={<Deals />}/>
-
+        <Route path='/cart' element={<Cart />}/>
       </Route>
       <Route path='/signIn' element={<SignIn/>}/>
       </>
